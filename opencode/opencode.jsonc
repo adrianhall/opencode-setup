@@ -8,7 +8,7 @@
       "url": "https://portal.mcp.cfdata.org/mcp",
       "enabled": true,
       "oauth": {
-        "redirectUri": "http://127.0.0.1:57123/mcp/oauth/callback?server=cf-portal&directory=%2FUsers%2Fahall%2Frepos%2Fadrianhall%2Fwebmud"
+        "redirectUri": "http://127.0.0.1:57123/mcp/oauth/callback?server=cf-portal"
       }
     },
     "excalidraw": {
