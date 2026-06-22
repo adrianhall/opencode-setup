@@ -7,9 +7,7 @@
       "type": "remote",
       "url": "https://portal.mcp.cfdata.org/mcp",
       "enabled": true,
-      "oauth": {
-        "redirectUri": "http://127.0.0.1:57123/mcp/oauth/callback?server=cf-portal"
-      }
+      "oauth": { }
     },
     "excalidraw": {
       "type": "remote",
