@@ -1,0 +1,69 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "default_agent": "plan",
+  "small_model": "google/gemini-flash-latest",
+  "mcp": {
+    "cf-portal": {
+      "type": "remote",
+      "url": "https://portal.mcp.cfdata.org/mcp",
+      "enabled": true,
+      "oauth": {
+        "redirectUri": "http://127.0.0.1:57123/mcp/oauth/callback?server=cf-portal&directory=%2FUsers%2Fahall%2Frepos%2Fadrianhall%2Fwebmud"
+      }
+    },
+    "excalidraw": {
+      "type": "remote",
+      "url": "https://mcp.excalidraw.cfdata.org/mcp",
+      "enabled": true
+    },
+    "cloudflare-docs": {
+      "type": "remote",
+      "enabled": true,
+      "url": "https://docs.mcp.cloudflare.com/mcp"
+    }
+  },
+  "permission": {
+    "bash": "ask",
+    "codesearch": "allow",
+    "doom_loop": "ask",
+    "edit": "ask",
+    "external_directory": {
+      "*": "ask",
+      "~/.agents/skills/**": "allow"
+    },
+    "glob": "allow",
+    "grep": "allow",
+    "lsp": "allow",
+    "read": "allow",
+    "question": "allow",
+    "task": "allow",
+    "skill": "allow",
+    "webfetch": "allow",
+    "websearch": "allow"
+  },
+  "agent": {
+    "plan": {
+      "model": "anthropic/claude-opus-4-8",
+      "variant": "xhigh",
+      "permissions": {
+        "edit": "deny"
+      }
+    },
+    "build": {
+      "model": "anthropic/claude-opus-4-8",
+      "variant": "default",
+      "permission": {
+        "edit": {
+          "*": "allow",
+          ".opencode.jsonc": "deny",
+          ".opencode/**": "deny",
+          "node_modules/**": "deny"
+        },
+        "bash": "allow",
+      }
+    }
+  },
+  "plugin": [
+    "cc-safety-net"
+  ]
+}
