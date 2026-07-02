@@ -5,12 +5,15 @@ winget install -h --accept-package-agreements  Microsoft.VisualStudioCode
 winget install -h --accept-package-agreements  Microsoft.VisualStudioCode.CLI
 winget install -h --accept-package-agreements  Microsoft.WindowsTerminal
 winget install -h --accept-package-agreements Google.Chrome
+winget install -e --id Cloudflare.Warp
 
 $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User") 
 
 npm config set allow-scripts=opencode-ai --location=user
 npm i -g opencode-ai
 npx skills add cloudflare/skills -y -g
+
+$env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User") 
 
 $opencodeConfig = @"
 {
