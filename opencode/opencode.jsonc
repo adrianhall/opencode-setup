@@ -18,7 +18,12 @@
       "type": "remote",
       "enabled": true,
       "url": "https://docs.mcp.cloudflare.com/mcp"
-    }
+    },
+    "cloudflare-api": {
+      "type": "remote",
+      "enabled": true,
+      "url": "https://mcp.cloudflare.com/mcp"
+    },
   },
   "permission": {
     "bash": "ask",
@@ -41,8 +46,8 @@
   },
   "agent": {
     "plan": {
-      "model": "anthropic/claude-opus-4-8",
-      "variant": "xhigh",
+      "model": "anthropic/claude-sonnet-5",
+      "variant": "default",
       "permissions": {
         "edit": "deny"
       }
