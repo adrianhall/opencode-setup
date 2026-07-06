@@ -24,6 +24,11 @@
       "enabled": true,
       "url": "https://mcp.cloudflare.com/mcp"
     },
+    "svelte": {
+      "type": "remote",
+      "enabled": true,
+			"url": "https://mcp.svelte.dev/mcp"
+		}
   },
   "permission": {
     "bash": "ask",

@@ -45,10 +45,8 @@ npx skills add cloudflare/skills -g -a opencode -y
 npx skills add adrianhall/cloudflare-auth -g -a opencode -y
 npx skills add adrianhall/cloudflare-logger -g -a opencode -y
 npx skills add adrianhall/cloudflare-scripts -g -a opencode -y
-npx skills add vercel-labs/agent-skills -g -a opencode -y \
-    --skill vercel-react-best-practices \
-    --skill vercel-composition-patterns
-npx skills add shadcn/ui -g -a opencode -y
-npx skills add anthropics/skills --skill webapp-testing -g -a opencode -y
+npx skills add sveltejs/ai -g -a opencode -y
+npx skills add ejirocodes/agent-skills --skill svelte5-best-practices -g -a opencode -y
+npx skills add https://github.com/huntabyte/shadcn-svelte --skill shadcn-svelte -g -a opencode -y
 
 echo "==> opencode environment setup complete"
