@@ -58,7 +58,7 @@
       }
     },
     "build": {
-      "model": "anthropic/claude-opus-4-8",
+      "model": "anthropic/claude-sonnet-5",
       "variant": "default",
       "permission": {
         "edit": {
