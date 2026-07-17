@@ -1,7 +1,7 @@
 ---
 description: Reviews language and framework best practices — TypeScript, React, Cloudflare Workers/Durable Objects, Hono, Kysely, TanStack — plus API documentation completeness. Read-only. Dispatched by review-orchestrator.
 mode: subagent
-model: anthropic/claude-opus-4-8
+model: cloudflare-workers-ai/@cf/zai-org/glm-5.2
 permission:
   edit: deny
   task: deny

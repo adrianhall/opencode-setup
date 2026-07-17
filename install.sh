@@ -42,11 +42,9 @@ echo "==> Config installed"
 echo "==> Installing skills for opencode"
 
 npx skills add cloudflare/skills -g -a opencode -y
-npx skills add adrianhall/cloudflare-auth -g -a opencode -y
-npx skills add adrianhall/cloudflare-logger -g -a opencode -y
-npx skills add adrianhall/cloudflare-scripts -g -a opencode -y
+npx skills add adrianhall/cloudflare-toolkit -g -a opencode -y
 npx skills add sveltejs/ai -g -a opencode -y
 npx skills add ejirocodes/agent-skills --skill svelte5-best-practices -g -a opencode -y
-npx skills add https://github.com/huntabyte/shadcn-svelte --skill shadcn-svelte -g -a opencode -y
+npx skills add huntabyte/shadcn-svelte --skill shadcn-svelte -g -a opencode -y
 
 echo "==> opencode environment setup complete"

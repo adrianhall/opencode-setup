@@ -1,7 +1,7 @@
 ---
 description: Security review using Semgrep + CodeQL plus manual inspection. Catches embedded credentials, injection, unprotected endpoints, race conditions, JWT misuse, CSRF/XSS/CORS, dependency CVEs. Requires semgrep and codeql installed. Dispatched by review-orchestrator.
 mode: subagent
-model: anthropic/claude-opus-4-8
+model: openai/gpt-5.6-sol
 permission:
   edit: deny
   task: deny

@@ -1,7 +1,7 @@
 ---
 description: Writes engineering specifications and design documents. Reads anything in the repository for context, but only writes to the docs/ directory. Emphasizes deep architectural thinking, trade-off analysis, and best practices.
 mode: primary
-model: anthropic/claude-opus-4-8
+model: xai/grok-4.5
 temperature: 0.3
 permission:
   # Full read access for gathering context.

@@ -1,7 +1,7 @@
 ---
 description: Multi-agent code review orchestrator. Dispatches the architecture, code, security, and accessibility reviewers in parallel and produces a single prioritised P0–P3 findings table. Read-only.
 mode: primary
-model: anthropic/claude-opus-4-8
+model: cloudflare-workers-ai/@cf/zai-org/glm-5.2
 permission:
   edit: deny
   read: allow

@@ -1,7 +1,7 @@
 ---
 description: WCAG 2.2 Level AA accessibility review of UI code — semantic HTML, ARIA, keyboard navigation, focus management, color contrast, image alt, form labels, headings, landmarks, target sizes, motion. Read-only. Dispatched by review-orchestrator.
 mode: subagent
-model: anthropic/claude-opus-4-8
+model: anthropic/claude-sonnet-5
 permission:
   edit: deny
   task: deny
